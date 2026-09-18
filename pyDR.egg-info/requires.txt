@@ -1,0 +1,12 @@
+numpy<2
+scipy
+pandas
+matplotlib
+MDAnalysis
+requests
+
+[fast]
+pyfftw
+
+[gui]
+PyQt5

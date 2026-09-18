@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyDR"
+version = "0.1.0"
+description = "Detector-based analysis of MD and NMR relaxation data (pyDIFRATE implementation)"
+readme = "README.md"
+license = { text = "GPL-3.0-or-later" }
+requires-python = ">=3.8,<3.10"
+dependencies = [
+    "numpy<2",
+    "scipy",
+    "pandas",
+    "matplotlib",
+#    "MDAnalysis>=0.19.2",
+    "MDAnalysis",
+    "requests",
+]
+
+[project.optional-dependencies]
+gui  = ["PyQt5"]
+fast = ["pyfftw"]
+
+[project.urls]
+Repository = "https://github.com/jacksoncrowley/pyDR"
